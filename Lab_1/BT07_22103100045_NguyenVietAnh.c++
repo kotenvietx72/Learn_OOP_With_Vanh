@@ -44,3 +44,4 @@ int main()
     b.in();
     a.tinhluong();
 }
+//DONE, bài này làm thuận lợi ít bug hơn nè
