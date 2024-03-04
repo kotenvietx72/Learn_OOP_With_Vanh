@@ -72,5 +72,6 @@ int main()
     nhap_nts(a, n);
     cout<<"Thong tin sinh vien sau khi sap xep giam dan"<<endl;
     in_nts(a, n);
+    //Done
 }
 
