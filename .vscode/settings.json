@@ -4,6 +4,7 @@
         "iostream": "cpp",
         "system_error": "cpp",
         "xlocale": "cpp",
-        "istream": "cpp"
+        "istream": "cpp",
+        "iomanip": "cpp"
     }
 }
