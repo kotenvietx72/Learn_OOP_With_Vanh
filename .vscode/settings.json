@@ -5,6 +5,7 @@
         "system_error": "cpp",
         "xlocale": "cpp",
         "istream": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "iosfwd": "cpp"
     }
 }
