@@ -138,4 +138,5 @@ int main()
         cin>>a[i];
     }
     kiemtra(a, n);
+    // DONE
 }

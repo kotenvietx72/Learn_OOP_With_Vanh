@@ -6,6 +6,7 @@
         "xlocale": "cpp",
         "istream": "cpp",
         "iomanip": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "ostream": "cpp"
     }
 }

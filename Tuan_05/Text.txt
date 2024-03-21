@@ -1,0 +1,8 @@
+             Ma hang   Ten hang san xuat   Don gia      Dung tich    Trong luong
+                   1                   1         1              1              1
+                   2                   2         2              2              2
+                   4                   4         4              4              4
+                   3                   3         3              3              3
+	[!] Thong tin OTO co don gia lon nhat
+             Ma hang   Ten hang san xuat   Don gia      Dung tich    Trong luong
+                   4                   4         4              4              4
