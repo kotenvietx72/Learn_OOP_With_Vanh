@@ -161,5 +161,5 @@ int main()
 {
     main_chinh();
     return 0;
-    // Done, vất vả quá =)))))
+    // Done, vất vả quá
 }

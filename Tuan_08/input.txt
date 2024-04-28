@@ -1,7 +1,8 @@
-6
+7
 Nguyen_Van_A 2004 Tot 9.5 530207
 Tran_Van_B 1997 Kha 8.3 235224
 Nguyen_Thi_C 2001 Tot 7.2 235235
 Vo_Thi_X 2006 Trung_Binh 5.7 124521
 Tam_Thi_D 1999 Tot 6.7 243521
 Banh_Thi_E 2007 Kha 7.1 124124
+Huy_Chua_He 2004 Tot 9.8 154235
