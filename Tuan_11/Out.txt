@@ -1,0 +1,8 @@
+			 ------ THONG TIN CAC CHUYEN XE NOI THANH ------
+     Ma So Chuyen Xe       Ho Ten Tai Xe     Bien So Xe       So Tuyen       So Km Di Duoc      Doanh Thu
+                   2                   2              2                   2                   2              2
+			[!] Doanh Thu cua cac chuyen xe Noi Thanh la: 2
+			 ------ THONG TIN CAC CHUYEN XE NGOAI THANH ------
+     Ma So Chuyen Xe       Ho Ten Tai Xe     Bien So Xe             Noi Den     So Ngay Di Duoc      Doanh Thu
+                   1                   1              1              1                   1              1
+			[!] Doanh Thu cua cac chuyen xe Ngoai Thanh la: 1
