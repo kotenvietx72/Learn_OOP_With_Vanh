@@ -20,10 +20,7 @@ public:
         cout<<"Nhap so xe: "; cin>>SoXe;
         cout<<"Nhap doanh thu: "; cin>>DoanhThu;
     }
-    virtual void in()
-    {
-        output<<setw(20)<<Ma<<setw(20)<<Name<<setw(15)<<SoXe;
-    }
+    virtual void in() = 0;
     int get_DoanhThu()
     {
         return DoanhThu;
@@ -44,7 +41,7 @@ public:
     void in()
     {
         ChuyenXe::in();
-        output<<setw(15)<<SoTuyen<<setw(20)<<SoKmDiDuoc<<setw(15)<<DoanhThu<<endl;
+        output<<setw(20)<<Ma<<setw(20)<<Name<<setw(15)<<SoXe<<setw(20)<<SoTuyen<<setw(20)<<SoKmDiDuoc<<setw(15)<<DoanhThu<<endl;
     }
 };
 
@@ -63,7 +60,7 @@ public:
     void in()
     {
         ChuyenXe::in();
-        output<<setw(20)<<NoiDen<<setw(20)<<SoNgayDiDuoc<<setw(15)<<DoanhThu<<endl;
+        output<<setw(20)<<Ma<<setw(20)<<Name<<setw(15)<<SoXe<<setw(20)<<NoiDen<<setw(20)<<SoNgayDiDuoc<<setw(15)<<DoanhThu<<endl;
     }
 };
 
@@ -106,7 +103,7 @@ void nhap_nChuyenXe(ChuyenXe *a[], int n)
 void in_nChuyenXeNoiThanh(ChuyenXe *a[], int n)
 {
     output<<"\t\t\t ------ THONG TIN CAC CHUYEN XE NOI THANH ------"<<endl;
-    output<<setw(20)<<"Ma So Chuyen Xe"<<setw(20)<<"Ho Ten Tai Xe"<<setw(15)<<"Bien So Xe"<<setw(15)<<"So Tuyen"<<setw(20)<<"So Km Di Duoc"<<setw(15)<<"Doanh Thu"<<endl;
+    output<<setw(20)<<"Ma So Chuyen Xe"<<setw(20)<<"Ho Ten Tai Xe"<<setw(15)<<"Bien So Xe"<<setw(20)<<"So Tuyen"<<setw(20)<<"So Km Di Duoc"<<setw(15)<<"Doanh Thu"<<endl;
     for(int i = 0; i < n; i++)
     {
         if(dynamic_cast<NoiThanh*>(a[i]) == nullptr)
@@ -182,4 +179,5 @@ int main()
 {
     main_chinh();
 }
-// Code vẫn chạy ổn nhưng hơi hề tí
+// Thôi mệt quá fix sau nha, code chạy ổn ròi
+// PIPI mọi người
