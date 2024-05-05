@@ -1,0 +1,20 @@
+			 ----- DANH SACH CAC MAT HANG TRONG KHO -----
+       STT             Ten mat hang            So luong
+         1                 Thuoc La                 632
+         2             Ruou Tao Meo                 162
+         3                  Hoa Qua                6878
+         4                 Banh Keo                3426
+         5                 Bia HaHa                7356
+         6                Nuoc Ngot                 135
+--------------------------------------------------------------------------------
+			 ----- DANH SACH CAC MAT HANG NHAP KHAU TRONG KHO -----
+       STT             Ten mat hang            So luong
+         1                 Thuoc La                 632
+         2             Ruou Tao Meo                 162
+         5                 Bia HaHa                7356
+--------------------------------------------------------------------------------
+			 ----- DANH SACH CAC MAT HANG DAI LY TRONG KHO -----
+       STT             Ten mat hang            So luong
+         3                  Hoa Qua                6878
+         4                 Banh Keo                3426
+         6                Nuoc Ngot                 135
