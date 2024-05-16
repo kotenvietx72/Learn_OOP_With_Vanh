@@ -235,5 +235,5 @@ void main_chinh()
 int main()
 {
     main_chinh();
-    // Giờ mới thực sự ổn nha, giờ chạy code nè
+    // Done
 }

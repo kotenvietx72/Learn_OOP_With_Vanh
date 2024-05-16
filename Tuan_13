@@ -1,0 +1,160 @@
+#include<iostream>
+using namespace std;
+
+class PhanSo
+{
+    int TuSo, MauSo;
+public:
+    PhanSo()
+    {
+        TuSo = 0; MauSo = 1;
+    }
+    friend istream& operator>> (istream &is, PhanSo &a)
+    {
+        cout<<"Nhap tu so: "; is>>a.TuSo;
+        cout<<"Nhap mau so: "; is>>a.MauSo;
+        return is;
+    }
+    friend ostream& operator<< (ostream &os, PhanSo a)
+    {
+        os<<TuSo<<" / "<<MauSo;
+        return os;
+    }
+    friend bool operator <(PhanSo a, PhanSo b)
+    {
+        return a.TuSo * b.MauSo < b.TuSo * a.MauSo;
+    }
+    friend PhanSo operator +(PhanSo a, PhanSo b)
+    {
+        PhanSo x;
+        x.TuSo = a.TuSo * b.MauSo + b.TuSo * a.MauSo;
+        x.MauSo = a.MauSo * b.MauSo;
+        int max = 0;
+        min = (x.TuSo < x.MauSo)? x.TuSo: x.MauSo;
+        for(int i = min; i > 1; i--)
+        {
+            if(x.TuSo % i == 0 && x.MauSo % i == 0)
+            {
+                x.TuSo /= i;
+                x.MauSo /= i;
+                break;
+            }
+        }
+        return x;
+    }
+    friend bool operator >(PhanSo a, PhanSo b)
+    {
+        return a.TuSo * b.MauSo > b.TuSo * a.MauSo;
+    }                                                               
+};
+
+/** Tìm phần tử lớn nhất trên mảng*/
+template <class T>
+T Max (T a[], int n)
+{
+    T max = a[0];
+    for(int i = 1; i < n; i++)
+    {
+        if(max < a[i])
+            max = a[i];
+    }
+    return max;
+}
+
+/** Tính tổng các phần tử*/
+template <class T>
+T Sum (T a[], int n)
+{
+    T sum = a[0];
+    for(int i = 1; i < n; i++)
+        sum = sum + a[i];
+    return sum;
+}
+
+/** Đổi chỗ hai phần tử*/
+template <class T>
+void Change(T a, T b)
+{
+    T index = a;
+    a = b;
+    b = index;
+}
+
+/** Sắp xếp các phần tử theo chiều tăng dần*/
+template <class T>
+void Arrange(T a[], int n)
+{
+    for(int i = 0; i < n - 1; i++)
+    {
+        for(int j = i + 1; j < n; j++)
+        {
+            if(a[i] > a[j])
+                Change(a[i], a[j]);
+        }
+    }
+}
+
+/** Đếm phần tử khác giá trị cho trước*/
+template <class T>
+void Count(T a[], T b)
+{
+    int count = 0;
+    for(int i = 0; i < n; i++)
+    {
+        if(a[i] != b)
+            count++;
+    }
+    cout<<"\t [!] So luong phan tu khac gia tri "<<b<<" la: "<<count<<endl;
+}
+
+/** Tìm phần tử theo giá trị X được nhập vào*/
+template <class T>
+void Find(T a[], int n)
+{
+    T b;
+    cout<<"[?] Nhap gia tri can tim kiem: "; cin>>b;
+    int count = 0;
+    for(int i = 0; i < n; i++)
+    {
+        if(a[i] == b)
+            count++;
+    }
+    if(dem == 0)
+        cout<<"\t [!] Khong co gia tri can tim kiem trong mang"<<endl;
+    else
+        cout<<"\t [!] Co tong cong "<<count<<" gia tri "<<b<<" trong mang"<<endl;
+}
+
+/** Xoá phần tử trên mảng tại vị trí k*/
+template <class T>
+void Delete(T a[], int &n)
+{
+    int k = -1;
+    cout<<"[?] Nhap vao vi tri can xoa: "; cin>>k;
+    for(int i = k - 1; i < n; i++)
+    {
+        a[i] = a[i + 1];
+    }
+    n--;
+}
+
+/** Chèn thêm phần tử tại vị trí k*/
+template <class T>
+void Insert(T a[], int &n)
+{
+    int k = -1;
+    cout<<"[?] Nhap vi tri can chen them phan tu: "; cin>>k;
+    for(int i = n; i > k; i--)
+    {
+        a[i] = a[i - 1];
+    }
+    n++;
+    T x;
+    cout<<"Nhap thong tin cho phan tu duoc chen!"<<endl;
+    cin>>x;
+}
+
+int main()
+{
+    return 0;
+}
