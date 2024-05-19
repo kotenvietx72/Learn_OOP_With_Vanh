@@ -190,10 +190,13 @@ void Delete(T a[], int &n)
 {
     int k = -1;
     cout<<"[?] Nhap vao vi tri can xoa: "; cin>>k;
-    for(int i = k - 1; i < n; i++)
+    while(k < 0 || k > n)
     {
-        a[i] = a[i + 1];
+        cout<<"\t [!] Vi tri khong hop le!"<<endl;
+        cout<<"[?] Nhap lai vi tri can xoa: "; cin>>k;
     }
+    for(int i = k - 1; i < n; i++)
+        a[i] = a[i + 1];
     n--;
     cout<<"\t [!] Danh sach sau khi xoa phan tu"<<endl;
     in_n(a, n);
@@ -205,10 +208,13 @@ void Insert(T a[], int &n)
 {
     int k = -1;
     cout<<"[?] Nhap vi tri can chen them phan tu: "; cin>>k;
-    for(int i = n; i >= k; i--)
+    while(k < 0 || k > n)
     {
-        a[i] = a[i - 1];
+        cout<<"\t [!] Vi tri khong hop le!"<<endl;
+        cout<<"[?] Nhap lai vi tri can chen: "; cin>>k;
     }
+    for(int i = n; i >= k && i > 1; i--)
+        a[i] = a[i - 1];
     n++;
     T x;
     cout<<"Nhap thong tin cho phan tu duoc chen!"<<endl;
@@ -256,6 +262,7 @@ void main_SoPhuc()
 }
 int main()
 {
-    //main_PhanSo();
+    main_PhanSo();
     main_SoPhuc();
+    
 }
