@@ -43,4 +43,5 @@ int main()
     Array<float> arr2(b, 5);
     arr2.in();
     cout<<"\t [!] Tong cac gia tri trong mang la: "<<arr2.sum()<<endl;
+    // Done
 }
